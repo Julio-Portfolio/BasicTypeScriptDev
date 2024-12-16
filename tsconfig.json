@@ -1,0 +1,16 @@
+{  // podemos abrir a documentação dos parametros mas o setup normal é este
+   //podermos tambem instalar o npm i tsup - D que é um copilador melhor que o  "dist": "npx tsc",
+  "compilerOptions": {
+    //qual seria a versão
+    "target":"ES6",
+    //bom usar o mais antigo para ter mais aderencia
+    "module":"CommonJS",
+    //os arquivos criados onde iram ficar no caso os .js
+    "outDir":"./dist",
+    //habilita o modulo de verificação de variaveis , se estão vindo certinhas
+    "strict":true ,
+    //para ter compatibilidade entre o commonJS e ECMAJS
+    "esModuleInterop": true
+    // depois de feito isto quando rodar o comando npm run dist ele irá seguir esta cartilha para executar o que deve ser feito
+  }
+}
